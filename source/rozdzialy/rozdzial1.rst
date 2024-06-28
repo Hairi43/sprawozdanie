@@ -91,12 +91,3 @@ scenariusze dostępu:
 
    # Uwierzytelnianie zdalne z użyciem certyfikatów SSL dla wszystkich baz danych
    hostssl all             all             0.0.0.0/0               cert
-
-Podsumowanie
-------------
-
-Plik ``pg_hba.conf`` jest nieodzownym elementem zarządzania dostępem do
-baz danych PostgreSQL. Dzięki możliwości definiowania szczegółowych
-reguł dostępu, administratorzy mogą precyzyjnie kontrolować, kto i w
-jaki sposób może łączyć się z bazą danych, co jest kluczowe dla
-zapewnienia bezpieczeństwa systemu.
