@@ -80,19 +80,15 @@ scenariusze dostępu:
 
 ::
 
-   Pozwól na połączenie dowolnego użytkownika z hostem 192.168.12.10
-   do bazy danych "postgres", jeśli hasło użytkownika jest poprawnie podane
+   Pozwól na połączenie dowolnego użytkownika z hostem 192.168.12.10 do bazy danych "postgres", jeśli hasło użytkownika jest poprawnie podane
    # Typ   Baza danych    Użytkownik    Adres              Metoda
    host    postgres       all           192.168.12.10/32   scram-sha-256
 
    Pozwól dowolnemu użytkownikowi na lokalnym systemie łączyć się z dowolną bazą danych
-   używając dowolnej nazwy użytkownika bazy danych za pomocą gniazd Unix (domyślnie dla 
-   połączeń lokalnych)
+   używając dowolnej nazwy użytkownika bazy danych za pomocą gniazd Unix (domyślnie dla połączeń lokalnych)
    # Typ   Baza danych    Użytkownik    Adres              Metoda
    local   all            all                              trust
 
-   Pozwól na połączenie używając wyrażenia regularnego dla DATABASE, które pozwala na połączenie
-   z bazą danych db1, db2 oraz dowolnymi bazami danych o nazwie zaczynającej się od "db"
-   i kończącej się liczbą składającą się z dwóch do czterech cyfr (np. "db1234" lub "db12").
+   Pozwól na połączenie używając wyrażenia regularnego dla DATABASE, które pozwala na połączenie z bazą danych db1, db2 oraz dowolnymi bazami danych o nazwie zaczynającej się od "db" i kończącej się liczbą      składającą się z dwóch do czterech cyfr (np. "db1234" lub "db12").
    # Typ   Baza danych                Użytkownik    Adres          Metoda
    local   db1,"/^db\d{2,4}$",db2     all           localhost      trust
