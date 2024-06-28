@@ -1,4 +1,4 @@
-1. pg_hba.conf - Sterowanie Dostępem
+pg_hba.conf - Sterowanie Dostępem
 =================================
 
 Plik ``pg_hba.conf`` (PostgreSQL Host-Based Authentication) jest
